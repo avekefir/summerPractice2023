@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.empty.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_settingFragment"
+            app:destination="@id/settingFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_mainFragment_to_musicFragment2"
+            app:destination="@id/musicFragment2" />
+        <action
+            android:id="@+id/action_mainFragment_to_stonksFragment"
+            app:destination="@id/stonksFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_otherFragment"
+            app:destination="@id/otherFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.empty.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_otherFragment"
+            app:destination="@id/otherFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.empty.SettingFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingFragment_to_otherFragment"
+            app:destination="@id/otherFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/musicFragment2"
+        android:name="com.example.empty.MusicFragment"
+        android:label="fragment_music"
+        tools:layout="@layout/fragment_music" >
+        <action
+            android:id="@+id/action_musicFragment2_to_otherFragment"
+            app:destination="@id/otherFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/otherFragment"
+        android:name="com.example.empty.OtherFragment"
+        android:label="fragment_other"
+        tools:layout="@layout/fragment_other" />
+    <fragment
+        android:id="@+id/stonksFragment"
+        android:name="com.example.empty.StonksFragment"
+        android:label="fragment_stonks"
+        tools:layout="@layout/fragment_stonks" >
+        <action
+            android:id="@+id/action_stonksFragment_to_otherFragment"
+            app:destination="@id/otherFragment" />
+        <action
+            android:id="@+id/action_stonksFragment_to_otherFragment2"
+            app:destination="@id/otherFragment" />
+    </fragment>
+</navigation>
