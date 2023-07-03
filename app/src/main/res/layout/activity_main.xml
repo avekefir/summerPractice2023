@@ -6,13 +6,82 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/b_validation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="Рассчет"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_age"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_age"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.762" />
+
+    <EditText
+        android:id="@+id/tv_name"
+        android:layout_width="242dp"
+        android:layout_height="72dp"
+        android:ems="10"
+        android:hint="Имя"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/b_validation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <EditText
+        android:id="@+id/tv_height"
+        android:layout_width="242dp"
+        android:layout_height="72dp"
+        android:ems="10"
+        android:hint="Рост"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/b_validation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.322" />
+
+    <EditText
+        android:id="@+id/tv_weight"
+        android:layout_width="242dp"
+        android:layout_height="72dp"
+        android:ems="10"
+        android:hint="Вес"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/b_validation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.596" />
+
+    <EditText
+        android:id="@+id/tv_age"
+        android:layout_width="242dp"
+        android:layout_height="72dp"
+        android:ems="10"
+        android:hint="Возраст"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/b_validation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.906" />
+
     <TextView
+        android:id="@+id/tv_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/b_validation"
+        app:layout_constraintStart_toStartOf="@+id/b_validation"
+        app:layout_constraintTop_toBottomOf="@+id/b_validation" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
